@@ -14,6 +14,11 @@
 		7031046123709025001F7417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7031046023709025001F7417 /* Assets.xcassets */; };
 		7031046423709025001F7417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7031046223709025001F7417 /* LaunchScreen.storyboard */; };
 		7031046723709025001F7417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7031046623709025001F7417 /* main.m */; };
+		707F062D2371E7B400E5A548 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707F062C2371E7B400E5A548 /* Calculator.storyboard */; };
+		707F062F2371EB8D00E5A548 /* Pythagorean.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707F062E2371EB8D00E5A548 /* Pythagorean.storyboard */; };
+		708A48902371EDFD00B033D4 /* Fileio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708A488F2371EDFD00B033D4 /* Fileio.storyboard */; };
+		708A48922371EE2C00B033D4 /* Histogram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708A48912371EE2C00B033D4 /* Histogram.storyboard */; };
+		708A48942371EED400B033D4 /* SearchEngine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708A48932371EED400B033D4 /* SearchEngine.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		7031046323709025001F7417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7031046523709025001F7417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7031046623709025001F7417 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		707F062C2371E7B400E5A548 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		707F062E2371EB8D00E5A548 /* Pythagorean.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pythagorean.storyboard; sourceTree = "<group>"; };
+		708A488F2371EDFD00B033D4 /* Fileio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fileio.storyboard; sourceTree = "<group>"; };
+		708A48912371EE2C00B033D4 /* Histogram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Histogram.storyboard; sourceTree = "<group>"; };
+		708A48932371EED400B033D4 /* SearchEngine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchEngine.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,11 @@
 				7031045A23709024001F7417 /* ViewController.h */,
 				7031045B23709024001F7417 /* ViewController.m */,
 				7031045D23709024001F7417 /* Main.storyboard */,
+				708A48912371EE2C00B033D4 /* Histogram.storyboard */,
+				708A488F2371EDFD00B033D4 /* Fileio.storyboard */,
+				708A48932371EED400B033D4 /* SearchEngine.storyboard */,
+				707F062E2371EB8D00E5A548 /* Pythagorean.storyboard */,
+				707F062C2371E7B400E5A548 /* Calculator.storyboard */,
 				7031046023709025001F7417 /* Assets.xcassets */,
 				7031046223709025001F7417 /* LaunchScreen.storyboard */,
 				7031046523709025001F7417 /* Info.plist */,
@@ -134,8 +149,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7031046423709025001F7417 /* LaunchScreen.storyboard in Resources */,
+				708A48922371EE2C00B033D4 /* Histogram.storyboard in Resources */,
+				708A48942371EED400B033D4 /* SearchEngine.storyboard in Resources */,
 				7031046123709025001F7417 /* Assets.xcassets in Resources */,
 				7031045F23709024001F7417 /* Main.storyboard in Resources */,
+				707F062F2371EB8D00E5A548 /* Pythagorean.storyboard in Resources */,
+				708A48902371EDFD00B033D4 /* Fileio.storyboard in Resources */,
+				707F062D2371E7B400E5A548 /* Calculator.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

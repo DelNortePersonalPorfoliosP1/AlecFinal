@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lgv-yn-y3T">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -14,13 +14,129 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt3-o6-Tna">
+                                <rect key="frame" x="361" y="83" width="171" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Histogram"/>
+                                <connections>
+                                    <segue destination="pSB-Iy-cch" kind="show" id="Jjt-s5-7SU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KL6-Gt-Kqo">
+                                <rect key="frame" x="435" y="317" width="171" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="FileIO"/>
+                                <connections>
+                                    <segue destination="Lkz-zA-jwj" kind="show" id="QJx-Vl-M3u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7k-1o-Q4z">
+                                <rect key="frame" x="162" y="452" width="171" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Pythagorean"/>
+                                <connections>
+                                    <segue destination="osv-d9-SCU" kind="show" id="Vz5-tF-jpz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79G-4k-B1Y">
+                                <rect key="frame" x="454" y="557" width="191" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Search Engine"/>
+                                <connections>
+                                    <segue destination="dJM-PF-Ymg" kind="show" id="Ilm-yL-YKn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js5-47-Ll6">
+                                <rect key="frame" x="162" y="220" width="171" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Calculator"/>
+                                <connections>
+                                    <segue destination="zsc-dK-NrK" kind="show" id="NwJ-Ii-KvG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aP4-TG-cXV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="110"/>
+            <point key="canvasLocation" x="903.90625" y="109.5703125"/>
+        </scene>
+        <!--Histogram-->
+        <scene sceneID="vKk-Hj-hFD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Histogram" id="pSB-Iy-cch" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="d3I-Ye-NdP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADV-xb-F3D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="-141"/>
+        </scene>
+        <!--Fileio-->
+        <scene sceneID="QwD-Z2-GSy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fileio" id="Lkz-zA-jwj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="W47-gh-GHn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ryk-Za-7UH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="-15"/>
+        </scene>
+        <!--Pythagorean-->
+        <scene sceneID="wtg-v3-hr4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pythagorean" id="osv-d9-SCU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xYv-fP-SiU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vW-c2-bvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393" y="93"/>
+        </scene>
+        <!--SearchEngine-->
+        <scene sceneID="bG6-Ah-isk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchEngine" id="dJM-PF-Ymg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Se3-gZ-IPi"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0t-RJ-zeh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1351" y="209"/>
+        </scene>
+        <!--Calculator-->
+        <scene sceneID="fRK-x5-OZI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Calculator" id="zsc-dK-NrK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="y5b-ob-zp3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9I5-aj-dl9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="-16"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PXz-g0-WEw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lgv-yn-y3T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bly-91-9j0">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pyA-7o-PML"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTh-Q0-qN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.28125" y="109.5703125"/>
         </scene>
     </scenes>
 </document>
