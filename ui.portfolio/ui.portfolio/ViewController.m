@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "calc.h"
 
 //@interface ViewController ()
 //@end
@@ -26,39 +27,18 @@
     [self clearCalcAreaLabel];
 }
 
-/* Section 1: Methods for managing and performing calculation, C style used where practical */
 -(void)calculateAnswer  // method to perform calculation
 {
+//    int a1 = 0; //to determine which number is a squared function
     // arg2 = [calcAreaNumber doubleValue];  // Obj-C Class method to convert NSSTRING to double
-
     arg2 = calcAreaNumber.doubleValue;  // Alternate Java like syntax to convert NSSTRING to double
-    switch(mathOp)
-    {
-        case PLUS:
-            calcAnswer = arg1 + arg2;
-            break;
-        case MINUS:
-            calcAnswer = arg1 - arg2;
-            break;
-        case DIVIDE:
-            calcAnswer = arg1 / arg2;
-            break;
-        case MULTIPLY:
-            calcAnswer = arg1 * arg2;
-            break;
-        case MODULO:
-            calcAnswer = arg1/100;
-            break;
-//        case NEGATIVE:
-//            calcAnswer = arg1 - (arg1 * 2);
-//            break;
-        case SQUARE:
-            calcAnswer = arg1 * arg1;
-            break;
-        case -1:
-            calcAnswer = arg1;
-    }
+    
+    calcAnswer = calc(arg1, mathOp, arg2);
+    
 }
+
+/* Section 1: Methods for managing and performing calculation, C style used where practical */
+
 
 -(void)saveValueOfArg1 { // method to store 1st value in calculation (arg1), C style
     // arg1 = [calcAreaNumber doubleValue];  // Obj-C Class method to convert NSSTRING to double
