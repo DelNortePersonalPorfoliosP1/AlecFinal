@@ -6,12 +6,12 @@
 //  Copyright © 2019 Alec Linyard. All rights reserved.
 //
 
-#ifndef pythag_h
+//#ifndef pythag_h
 #define pythag_h
 
-#include <stdio.h>
 
 
-void pythagorean();
+double pythag(double sideone ,int mathOp,double sidetwo);
 
-#endif /* pythag_h */
+
+//#endif /* pythag_h */

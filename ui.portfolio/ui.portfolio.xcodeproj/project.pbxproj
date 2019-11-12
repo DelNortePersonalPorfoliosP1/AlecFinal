@@ -21,6 +21,7 @@
 		708A48942371EED400B033D4 /* SearchEngine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708A48932371EED400B033D4 /* SearchEngine.storyboard */; };
 		708E6F2C23747ECA00F810A9 /* pythag.c in Sources */ = {isa = PBXBuildFile; fileRef = 708E6F2B23747ECA00F810A9 /* pythag.c */; };
 		708E6F2F23747F8300F810A9 /* calc.c in Sources */ = {isa = PBXBuildFile; fileRef = 708E6F2E23747F8300F810A9 /* calc.c */; };
+		70E28DD12374881D00D2C3CA /* pythagController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E28DD02374881D00D2C3CA /* pythagController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		708E6F2B23747ECA00F810A9 /* pythag.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pythag.c; sourceTree = "<group>"; };
 		708E6F2D23747F8300F810A9 /* calc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = calc.h; sourceTree = "<group>"; };
 		708E6F2E23747F8300F810A9 /* calc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calc.c; sourceTree = "<group>"; };
+		70E28DD02374881D00D2C3CA /* pythagController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pythagController.m; sourceTree = "<group>"; };
+		70E28DD22374883600D2C3CA /* pythagController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pythagController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				708E6F2B23747ECA00F810A9 /* pythag.c */,
 				708E6F2D23747F8300F810A9 /* calc.h */,
 				708E6F2E23747F8300F810A9 /* calc.c */,
+				70E28DD02374881D00D2C3CA /* pythagController.m */,
+				70E28DD22374883600D2C3CA /* pythagController.h */,
 			);
 			path = ui.portfolio;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				708E6F2C23747ECA00F810A9 /* pythag.c in Sources */,
 				7031045623709024001F7417 /* AppDelegate.m in Sources */,
 				7031046723709025001F7417 /* main.m in Sources */,
+				70E28DD12374881D00D2C3CA /* pythagController.m in Sources */,
 				7031045923709024001F7417 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
