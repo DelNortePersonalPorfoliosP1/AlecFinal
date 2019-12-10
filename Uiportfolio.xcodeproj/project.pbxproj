@@ -28,6 +28,9 @@
 		6DB666132372021400A89134 /* AlgoSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666122372021400A89134 /* AlgoSearch.storyboard */; };
 		6DB666152372033B00A89134 /* Pythagoras.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666142372033B00A89134 /* Pythagoras.storyboard */; };
 		6DB6661F23724E2100A89134 /* calc.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DB6661E23724E2100A89134 /* calc.c */; };
+		70B836352398185400D77BBF /* Reverse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B836342398185400D77BBF /* Reverse.storyboard */; };
+		70B836372398187700D77BBF /* ReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B836362398187700D77BBF /* ReverseController.m */; };
+		70ED10B62396D71D00B37A07 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 70ED10B52396D71D00B37A07 /* reverse.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,10 @@
 		6DB666122372021400A89134 /* AlgoSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlgoSearch.storyboard; sourceTree = "<group>"; };
 		6DB666142372033B00A89134 /* Pythagoras.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pythagoras.storyboard; sourceTree = "<group>"; };
 		6DB6661E23724E2100A89134 /* calc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calc.c; sourceTree = "<group>"; };
+		70B836332398127400D77BBF /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseController.h; sourceTree = "<group>"; };
+		70B836342398185400D77BBF /* Reverse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reverse.storyboard; sourceTree = "<group>"; };
+		70B836362398187700D77BBF /* ReverseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseController.m; sourceTree = "<group>"; };
+		70ED10B52396D71D00B37A07 /* reverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,7 @@
 				6DB666082371ED4400A89134 /* FileIO.storyboard */,
 				6DB666102372014200A89134 /* Histogram.storyboard */,
 				6DB666142372033B00A89134 /* Pythagoras.storyboard */,
+				70B836342398185400D77BBF /* Reverse.storyboard */,
 				6D5429BF23708A0C0059C604 /* Assets.xcassets */,
 			);
 			path = Views;
@@ -132,6 +140,8 @@
 				6D7036D523799384004A956C /* HistoController.h */,
 				6D7036C82377B995004A956C /* PythController.m */,
 				6D7036CA2377B9CA004A956C /* PythController.h */,
+				70B836332398127400D77BBF /* ReverseController.h */,
+				70B836362398187700D77BBF /* ReverseController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +166,7 @@
 				6D7036E02379DA94004A956C /* histogram.c */,
 				6D7036DE2379DA59004A956C /* jumpers.c */,
 				6D7036DB2379DA41004A956C /* programming.c */,
+				70ED10B52396D71D00B37A07 /* reverse.c */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -219,6 +230,7 @@
 			files = (
 				6DB666092371ED4400A89134 /* FileIO.storyboard in Resources */,
 				6D5429C323708A0C0059C604 /* LaunchScreen.storyboard in Resources */,
+				70B836352398185400D77BBF /* Reverse.storyboard in Resources */,
 				6DB666112372014200A89134 /* Histogram.storyboard in Resources */,
 				6D5429C023708A0C0059C604 /* Assets.xcassets in Resources */,
 				6DB666072371E7D600A89134 /* Calculator.storyboard in Resources */,
@@ -243,10 +255,12 @@
 				6D5429B523708A0A0059C604 /* AppDelegate.m in Sources */,
 				6D7036E12379DA95004A956C /* histogram.c in Sources */,
 				6D5429C623708A0C0059C604 /* main.m in Sources */,
+				70ED10B62396D71D00B37A07 /* reverse.c in Sources */,
 				6D5429B823708A0A0059C604 /* SceneDelegate.m in Sources */,
 				6D7036D723799B80004A956C /* AlgoController.m in Sources */,
 				6D7036D423799330004A956C /* HistoController.m in Sources */,
 				6D7036DA2379DA31004A956C /* fileparse.c in Sources */,
+				70B836372398187700D77BBF /* ReverseController.m in Sources */,
 				6D7036DC2379DA41004A956C /* programming.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
