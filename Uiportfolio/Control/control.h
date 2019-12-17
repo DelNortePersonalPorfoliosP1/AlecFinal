@@ -51,5 +51,7 @@ double hyptoneuse (double side1, double side2);
 char *revXArray(char* input, long length);
 char *revXRecurse(const char* input, long length);
 char *revXPointer(const char* input, long length);
+char *paliEval(char* input, char* output, long length);
 
+char *removeVowels(const char *input, long length);
 #endif /* portfolio_h */

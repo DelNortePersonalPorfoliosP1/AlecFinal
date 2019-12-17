@@ -5,7 +5,7 @@
 //  Created by Alec Linyard on 12/3/19.
 //  Copyright © 2019 JM. All rights reserved.
 //
-
+#include <stdio.h>
 #include <string.h>
 #include "control.h"
 // PUT ME IN YOUR .C FILE, BUSINESS LOGIC
@@ -75,9 +75,5 @@ char *revXPointer(const char* input, long length) {
     return revBuffer;
 }
 // pali evaluation
-char *paliEval(const char* input, long length) {
-    // call function above to reverse string
-    // compare for equality, return message
-    return 1 ? isPali : noPali;
-}
-//NSSstring* string = [NSString stringWithFormat:@"%s" , func((char*)ostring)];
+
+
