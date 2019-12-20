@@ -150,8 +150,8 @@
 				6D7036CA2377B9CA004A956C /* PythController.h */,
 				70B836362398187700D77BBF /* ReverseController.m */,
 				70B836332398127400D77BBF /* ReverseController.h */,
-				704C299F23A7E61400E0AC9A /* PiglatinController.h */,
 				70F8278C23A944EF00086EF6 /* PiglatinController.m */,
+				704C299F23A7E61400E0AC9A /* PiglatinController.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

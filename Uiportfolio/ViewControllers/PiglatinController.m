@@ -9,17 +9,20 @@
 #include "control.h"
 #import "PiglatinController.h"
 
-@implementation Piglatin
-@synthesize output, inputText;
+@implementation PiglatinController
+@synthesize output, inputText, output1Text;
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-   [output setText:@""];
+   [output1Text setText:@""];
 }
-- (IBAction)remove:(id)sender {
-        const char * utf = [inputText.text UTF8String];
-    NSString* string = [NSString stringWithFormat:@"%s" , removeVowels((char*)utf, strlen(utf))];
-    //    NSString* string = [NSString stringWithFormat:@"%s" , revXPointer((char*)utf, strlen(utf))];
-        [output setText: string];
+- (IBAction)tokenPhrase:(id)sender {
+    tokentest();
+}
+- (IBAction)reverse:(id)sender {
+    const char * utf = [inputText.text UTF8String];
+    NSString* string = [NSString stringWithFormat:@"%s" , revXRecurse((char*)utf, strlen(utf))];
+//    NSString* string = [NSString stringWithFormat:@"%s" , revXPointer((char*)utf, strlen(utf))];
+    [output1Text setText: string];
 }
 @end

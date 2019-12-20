@@ -7,16 +7,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Piglatin Controller-->
         <scene sceneID="gcX-E5-weW">
             <objects>
-                <viewController storyboardIdentifier="Piglatin" id="IOi-BC-7DN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Piglatin" id="IOi-BC-7DN" customClass="PiglatinController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="81S-hd-aBt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q9r-l1-zMa">
-                                <rect key="frame" x="159" y="182" width="97" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eur-8v-OtH">
+                                <rect key="frame" x="180" y="277" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reverse"/>
+                                <connections>
+                                    <action selector="reverse:" destination="IOi-BC-7DN" eventType="touchUpInside" id="pRT-Kx-wMx"/>
+                                    <action selector="tokenPhrase:" destination="IOi-BC-7DN" eventType="touchUpInside" id="B39-d6-7Jg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLr-Si-LzS">
+                                <rect key="frame" x="20" y="389" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RkO-5n-yQK">
+                                <rect key="frame" x="159" y="184" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -25,10 +41,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4GU-Qa-oRM"/>
                     </view>
+                    <connections>
+                        <outlet property="inputText" destination="RkO-5n-yQK" id="yaY-6G-agT"/>
+                        <outlet property="output1Text" destination="eLr-Si-LzS" id="Z5s-4k-rUc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PR3-Be-8gp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1619" y="-729"/>
+            <point key="canvasLocation" x="-1620.289855072464" y="-729.24107142857144"/>
         </scene>
     </scenes>
 </document>

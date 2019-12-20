@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Piglatin : UIViewController
+@interface PiglatinController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *inputText;
 @property (strong, nonatomic) IBOutlet UILabel *output;
-
+@property (strong, nonatomic) IBOutlet UILabel *output1Text;
+void tokentest(void);
 @end
