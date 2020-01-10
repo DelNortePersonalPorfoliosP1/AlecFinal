@@ -73,4 +73,6 @@ typedef struct phrases {
   char reversed[LINE_BUFFER_SIZE];
   WORDS words[WORDS_TO_LINE_SIZE];
 } PHRASE;
+
+void pointertest();
 #endif /* portfolio_h */

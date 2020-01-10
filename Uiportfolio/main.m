@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "control.h"
 
 int main(int argc, char * argv[]) {
     NSString * appDelegateClassName;

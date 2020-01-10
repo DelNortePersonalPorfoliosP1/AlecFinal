@@ -32,6 +32,7 @@
 		704C29A223A7E8F500E0AC9A /* noVowels.c in Sources */ = {isa = PBXBuildFile; fileRef = 704C29A123A7E8F500E0AC9A /* noVowels.c */; };
 		70B836352398185400D77BBF /* Reverse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B836342398185400D77BBF /* Reverse.storyboard */; };
 		70B836372398187700D77BBF /* ReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B836362398187700D77BBF /* ReverseController.m */; };
+		70CC4E2A23C78A4300B85592 /* pointers.c in Sources */ = {isa = PBXBuildFile; fileRef = 70CC4E2923C78A4300B85592 /* pointers.c */; };
 		70ED10B62396D71D00B37A07 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 70ED10B52396D71D00B37A07 /* reverse.c */; };
 		70F8278D23A944EF00086EF6 /* PiglatinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8278C23A944EF00086EF6 /* PiglatinController.m */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		70B836332398127400D77BBF /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseController.h; sourceTree = "<group>"; };
 		70B836342398185400D77BBF /* Reverse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reverse.storyboard; sourceTree = "<group>"; };
 		70B836362398187700D77BBF /* ReverseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseController.m; sourceTree = "<group>"; };
+		70CC4E2923C78A4300B85592 /* pointers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pointers.c; sourceTree = "<group>"; };
 		70ED10B52396D71D00B37A07 /* reverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
 		70F8278C23A944EF00086EF6 /* PiglatinController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PiglatinController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 				6D7036DB2379DA41004A956C /* programming.c */,
 				70ED10B52396D71D00B37A07 /* reverse.c */,
 				704C29A123A7E8F500E0AC9A /* noVowels.c */,
+				70CC4E2923C78A4300B85592 /* pointers.c */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				6D5429B523708A0A0059C604 /* AppDelegate.m in Sources */,
 				6D7036E12379DA95004A956C /* histogram.c in Sources */,
 				6D5429C623708A0C0059C604 /* main.m in Sources */,
+				70CC4E2A23C78A4300B85592 /* pointers.c in Sources */,
 				70ED10B62396D71D00B37A07 /* reverse.c in Sources */,
 				6D5429B823708A0A0059C604 /* SceneDelegate.m in Sources */,
 				6D7036D723799B80004A956C /* AlgoController.m in Sources */,

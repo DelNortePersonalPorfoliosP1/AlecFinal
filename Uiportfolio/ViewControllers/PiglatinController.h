@@ -13,5 +13,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *inputText;
 @property (strong, nonatomic) IBOutlet UILabel *output;
 @property (strong, nonatomic) IBOutlet UILabel *output1Text;
+@property (strong, nonatomic) IBOutlet UILabel *input;
+@property (strong, nonatomic) IBOutlet UILabel *reverse;
+@property (strong, nonatomic) IBOutlet UILabel *piggy;
+@property (strong, nonatomic) IBOutlet UILabel *shorty;
+
 void tokentest(void);
 @end
