@@ -20,6 +20,7 @@
     self.ballInBunker = false;
     self.ballInHole = false;
     self.initialBallPosition = self.Ball.frame;
+    self.nextLevel.alpha = 0;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -85,6 +86,13 @@
     self.Ball.alpha = 0.2;
       self.ballInBunker = false;
       self.ballInHole = true;
+      self.nextLevel.alpha = 1;
+
+  }
+    
+    if (CGRectIntersectsRect(self.Ball.frame, self.Tree.frame)) {
+        self.ballVelocityY = -self.ballVelocityY;
+        self.ballVelocityX = -self.ballVelocityX;
 
   }
     if (!self.ballInBunker && CGRectIntersectsRect(self.Ball.frame, self.Bunker.frame)) {
@@ -97,6 +105,7 @@
    
   // if ball slows/stops turn off game timer and turn user interaction back on
   if(fabs(self.ballVelocityX) < stopSpeed && fabs(self.ballVelocityY) < stopSpeed) {
+      
     [self.gameTimer invalidate];
     [self.view setUserInteractionEnabled:YES];
       self.ballInBunker = false;

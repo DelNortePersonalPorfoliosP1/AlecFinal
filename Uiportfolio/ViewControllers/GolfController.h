@@ -18,6 +18,8 @@
 @property (strong, nonatomic) IBOutlet UIImageView *Hole;
 @property (strong, nonatomic) IBOutlet UIImageView *Bunker;
 @property (strong, nonatomic) IBOutlet UIButton *resetButton;
+@property (strong, nonatomic) IBOutlet UIButton *nextLevel;
+@property (weak, nonatomic) IBOutlet UIImageView *Tree;
 
 
 @property (nonatomic) CGPoint firstPoint;

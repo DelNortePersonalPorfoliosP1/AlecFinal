@@ -30,6 +30,8 @@
 		6DB6661F23724E2100A89134 /* calc.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DB6661E23724E2100A89134 /* calc.c */; };
 		70485BC623A87D5800B03B91 /* Piglatin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70485BC523A87D5800B03B91 /* Piglatin.storyboard */; };
 		704C29A223A7E8F500E0AC9A /* noVowels.c in Sources */ = {isa = PBXBuildFile; fileRef = 704C29A123A7E8F500E0AC9A /* noVowels.c */; };
+		70B50FD223D2185500930A8D /* topTree.png in Resources */ = {isa = PBXBuildFile; fileRef = 70B50FD123D2185500930A8D /* topTree.png */; };
+		70B50FD523D21EBD00930A8D /* golf2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B50FD423D21EBC00930A8D /* golf2.storyboard */; };
 		70B836352398185400D77BBF /* Reverse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B836342398185400D77BBF /* Reverse.storyboard */; };
 		70B836372398187700D77BBF /* ReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B836362398187700D77BBF /* ReverseController.m */; };
 		70CC4E2A23C78A4300B85592 /* pointers.c in Sources */ = {isa = PBXBuildFile; fileRef = 70CC4E2923C78A4300B85592 /* pointers.c */; };
@@ -75,6 +77,8 @@
 		70485BC523A87D5800B03B91 /* Piglatin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Piglatin.storyboard; sourceTree = "<group>"; };
 		704C299F23A7E61400E0AC9A /* PiglatinController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PiglatinController.h; sourceTree = "<group>"; };
 		704C29A123A7E8F500E0AC9A /* noVowels.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = noVowels.c; sourceTree = "<group>"; };
+		70B50FD123D2185500930A8D /* topTree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topTree.png; sourceTree = "<group>"; };
+		70B50FD423D21EBC00930A8D /* golf2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = golf2.storyboard; sourceTree = "<group>"; };
 		70B836332398127400D77BBF /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseController.h; sourceTree = "<group>"; };
 		70B836342398185400D77BBF /* Reverse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reverse.storyboard; sourceTree = "<group>"; };
 		70B836362398187700D77BBF /* ReverseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseController.m; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 		6DB66603237135DD00A89134 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				70B50FD323D21EA400930A8D /* Golf */,
 				6D5429C123708A0C0059C604 /* LaunchScreen.storyboard */,
 				6D5429BC23708A0A0059C604 /* Main.storyboard */,
 				6DB666122372021400A89134 /* AlgoSearch.storyboard */,
@@ -139,8 +144,6 @@
 				6DB666142372033B00A89134 /* Pythagoras.storyboard */,
 				70B836342398185400D77BBF /* Reverse.storyboard */,
 				70485BC523A87D5800B03B91 /* Piglatin.storyboard */,
-				70F1705323CF72D400BCEBBA /* Golf.storyboard */,
-				70F1705823CF73E300BCEBBA /* golfball.png */,
 				6D5429BF23708A0C0059C604 /* Assets.xcassets */,
 			);
 			path = Views;
@@ -194,6 +197,17 @@
 				70CC4E2923C78A4300B85592 /* pointers.c */,
 			);
 			path = Control;
+			sourceTree = "<group>";
+		};
+		70B50FD323D21EA400930A8D /* Golf */ = {
+			isa = PBXGroup;
+			children = (
+				70B50FD123D2185500930A8D /* topTree.png */,
+				70F1705823CF73E300BCEBBA /* golfball.png */,
+				70F1705323CF72D400BCEBBA /* Golf.storyboard */,
+				70B50FD423D21EBC00930A8D /* golf2.storyboard */,
+			);
+			path = Golf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DB666092371ED4400A89134 /* FileIO.storyboard in Resources */,
+				70B50FD523D21EBD00930A8D /* golf2.storyboard in Resources */,
 				70F1705423CF72D400BCEBBA /* Golf.storyboard in Resources */,
 				6D5429C323708A0C0059C604 /* LaunchScreen.storyboard in Resources */,
 				70B836352398185400D77BBF /* Reverse.storyboard in Resources */,
+				70B50FD223D2185500930A8D /* topTree.png in Resources */,
 				6DB666112372014200A89134 /* Histogram.storyboard in Resources */,
 				6D5429C023708A0C0059C604 /* Assets.xcassets in Resources */,
 				6DB666072371E7D600A89134 /* Calculator.storyboard in Resources */,
