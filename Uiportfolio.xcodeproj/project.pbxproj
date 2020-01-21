@@ -22,6 +22,7 @@
 		6D7036DC2379DA41004A956C /* programming.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D7036DB2379DA41004A956C /* programming.c */; };
 		6D7036DF2379DA59004A956C /* jumpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D7036DE2379DA59004A956C /* jumpers.c */; };
 		6D7036E12379DA95004A956C /* histogram.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D7036E02379DA94004A956C /* histogram.c */; };
+		6D8C4EB823D74B9E002B2B3D /* golfball.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C4EB723D74B9E002B2B3D /* golfball.png */; };
 		6DB666072371E7D600A89134 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666062371E7D600A89134 /* Calculator.storyboard */; };
 		6DB666092371ED4400A89134 /* FileIO.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666082371ED4400A89134 /* FileIO.storyboard */; };
 		6DB666112372014200A89134 /* Histogram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666102372014200A89134 /* Histogram.storyboard */; };
@@ -38,7 +39,6 @@
 		70ED10B62396D71D00B37A07 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 70ED10B52396D71D00B37A07 /* reverse.c */; };
 		70F1705423CF72D400BCEBBA /* Golf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F1705323CF72D400BCEBBA /* Golf.storyboard */; };
 		70F1705623CF72F200BCEBBA /* GolfController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F1705523CF72F200BCEBBA /* GolfController.m */; };
-		70F1705923CF73E300BCEBBA /* golfball.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F1705823CF73E300BCEBBA /* golfball.png */; };
 		70F8278D23A944EF00086EF6 /* PiglatinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8278C23A944EF00086EF6 /* PiglatinController.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +68,7 @@
 		6D7036DE2379DA59004A956C /* jumpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jumpers.c; sourceTree = "<group>"; };
 		6D7036E02379DA94004A956C /* histogram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = histogram.c; sourceTree = "<group>"; };
 		6D7036E22379DAE0004A956C /* control.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = control.h; sourceTree = "<group>"; };
+		6D8C4EB723D74B9E002B2B3D /* golfball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfball.png; sourceTree = "<group>"; };
 		6DB666062371E7D600A89134 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		6DB666082371ED4400A89134 /* FileIO.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileIO.storyboard; sourceTree = "<group>"; };
 		6DB666102372014200A89134 /* Histogram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Histogram.storyboard; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		70F1705323CF72D400BCEBBA /* Golf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Golf.storyboard; sourceTree = "<group>"; };
 		70F1705523CF72F200BCEBBA /* GolfController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfController.m; sourceTree = "<group>"; };
 		70F1705723CF72FD00BCEBBA /* GolfController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolfController.h; sourceTree = "<group>"; };
-		70F1705823CF73E300BCEBBA /* golfball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfball.png; sourceTree = "<group>"; };
 		70F8278C23A944EF00086EF6 /* PiglatinController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PiglatinController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,9 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				70B50FD123D2185500930A8D /* topTree.png */,
-				70F1705823CF73E300BCEBBA /* golfball.png */,
 				70F1705323CF72D400BCEBBA /* Golf.storyboard */,
 				70B50FD423D21EBC00930A8D /* golf2.storyboard */,
+				6D8C4EB723D74B9E002B2B3D /* golfball.png */,
 			);
 			path = Golf;
 			sourceTree = "<group>";
@@ -277,9 +277,9 @@
 				6D5429C023708A0C0059C604 /* Assets.xcassets in Resources */,
 				6DB666072371E7D600A89134 /* Calculator.storyboard in Resources */,
 				6DB666132372021400A89134 /* AlgoSearch.storyboard in Resources */,
+				6D8C4EB823D74B9E002B2B3D /* golfball.png in Resources */,
 				6DB666152372033B00A89134 /* Pythagoras.storyboard in Resources */,
 				70485BC623A87D5800B03B91 /* Piglatin.storyboard in Resources */,
-				70F1705923CF73E300BCEBBA /* golfball.png in Resources */,
 				6D5429BE23708A0A0059C604 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

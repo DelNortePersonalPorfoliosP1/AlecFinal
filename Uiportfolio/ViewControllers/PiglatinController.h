@@ -18,5 +18,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *piggy;
 @property (strong, nonatomic) IBOutlet UILabel *shorty;
 
-void tokentest(void);
+//void tokentest(void);
 @end
