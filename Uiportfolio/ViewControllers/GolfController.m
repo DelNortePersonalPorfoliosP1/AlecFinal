@@ -9,9 +9,10 @@
 #include "control.h"
 #import "GolfController.h"
 
-@implementation GolfController
-@synthesize Ball, Hole, firstPoint, lastPoint, resetButton, ballInBunker, initialBallPosition;
+int golfCounter = 0;
 
+@implementation GolfController
+@synthesize Ball, Hole, firstPoint, lastPoint, resetButton, ballInBunker, initialBallPosition, Shots;
 - (void)viewDidLoad {
   [super viewDidLoad];
   // changes hole image to be circular
@@ -21,6 +22,8 @@
     self.ballInHole = false;
     self.initialBallPosition = self.Ball.frame;
     self.nextLevel.alpha = 0;
+    self.Shots.text = [NSString stringWithFormat:@"Shots: %d", golfCounter];
+
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -42,7 +45,6 @@
 */
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
   NSLog(@"touches Ended");
-   
   UITouch *touch = [touches anyObject];
    
   // store point a touch end
@@ -54,7 +56,11 @@
   // velocity of ball based off of swipe
   self.ballVelocityX = speedScale * swipeVector.x;
   self.ballVelocityY = speedScale * swipeVector.y;
-   
+    
+    golfCounter++;
+    
+    self.Shots.text = [NSString stringWithFormat:@"Shots: %d", golfCounter];
+
   // move ball occurs multiple times at this sampling rate, until friction causes ball to stop
   self.gameTimer = [NSTimer scheduledTimerWithTimeInterval:.05 target:self selector:@selector(moveBall) userInfo:nil repeats:YES];
 }
@@ -94,6 +100,7 @@
         self.ballVelocityY = -self.ballVelocityY;
         self.ballVelocityX = -self.ballVelocityX;
 
+
   }
     if (!self.ballInBunker && CGRectIntersectsRect(self.Ball.frame, self.Bunker.frame)) {
     [self.gameTimer invalidate];
@@ -111,14 +118,48 @@
       self.ballInBunker = false;
       
   }
+    if (CGRectIntersectsRect(self.Ball.frame, self.directionalsleft.frame)) {
+        // See if it is moving right
+        if (self.ballVelocityX > 0) {
+            self.ballVelocityX *= 0.6;
+            if (self.ballVelocityX < 3) {
+                self.ballVelocityX = -3;
+            }
+            return;
+        }
+        
+        self.ballVelocityX = 1.4 * self.ballVelocityX;
+    }
+    
+    if (CGRectIntersectsRect(self.Ball.frame, self.directionalsright.frame)) {
+        // See if it is moving right
+        if (self.ballVelocityX < 0) {
+            self.ballVelocityX *= 0.6;
+            if (self.ballVelocityX > 3) {
+                self.ballVelocityX = -3;
+            }
+            return;
+        }
+        
+        self.ballVelocityX = 1.4 * self.ballVelocityX;
+    }
+
     
 }
 - (IBAction)resetBallPosition:(id)sender {
      self.Ball.frame = self.initialBallPosition;
     self.ballInHole = false;
     self.Ball.alpha = 1;
+    golfCounter = 0;
+    self.Shots.text = [NSString stringWithFormat:@"Shots: %d", golfCounter];
+    self.nextLevel.alpha = 0;
+
 
 
 }
+
+
+
+
 
 @end

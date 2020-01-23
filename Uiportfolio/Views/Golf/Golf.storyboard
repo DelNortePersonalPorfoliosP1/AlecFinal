@@ -50,9 +50,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
+                                    <action selector="resetBallPosition:" destination="93B-DD-tF7" eventType="touchUpInside" id="kn1-Cq-QNK"/>
                                     <segue destination="Nim-aO-Pdf" kind="show" id="hzg-nH-zyr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv5-aF-LvD">
+                                <rect key="frame" x="20" y="124" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="xIp-2r-IuE"/>
@@ -61,6 +69,7 @@
                         <outlet property="Ball" destination="jJG-JX-mWc" id="yS7-5P-wXm"/>
                         <outlet property="Bunker" destination="oOA-QI-uAe" id="MTr-JF-FqE"/>
                         <outlet property="Hole" destination="Cp2-Vg-2z2" id="RMT-Rz-DpG"/>
+                        <outlet property="Shots" destination="Xv5-aF-LvD" id="r4m-2f-19s"/>
                         <outlet property="Tree" destination="Ygq-gg-yFH" id="kyV-bv-xO8"/>
                         <outlet property="nextLevel" destination="3aT-Rd-nvK" id="HsY-Rm-ven"/>
                         <outlet property="resetButton" destination="OxY-hH-xCQ" id="XZl-CE-GjS"/>

@@ -22,12 +22,16 @@
 		6D7036DC2379DA41004A956C /* programming.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D7036DB2379DA41004A956C /* programming.c */; };
 		6D7036DF2379DA59004A956C /* jumpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D7036DE2379DA59004A956C /* jumpers.c */; };
 		6D7036E12379DA95004A956C /* histogram.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D7036E02379DA94004A956C /* histogram.c */; };
+		6D8C4EB823D74B9E002B2B3D /* golfball.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8C4EB723D74B9E002B2B3D /* golfball.png */; };
 		6DB666072371E7D600A89134 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666062371E7D600A89134 /* Calculator.storyboard */; };
 		6DB666092371ED4400A89134 /* FileIO.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666082371ED4400A89134 /* FileIO.storyboard */; };
 		6DB666112372014200A89134 /* Histogram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666102372014200A89134 /* Histogram.storyboard */; };
 		6DB666132372021400A89134 /* AlgoSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666122372021400A89134 /* AlgoSearch.storyboard */; };
 		6DB666152372033B00A89134 /* Pythagoras.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666142372033B00A89134 /* Pythagoras.storyboard */; };
 		6DB6661F23724E2100A89134 /* calc.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DB6661E23724E2100A89134 /* calc.c */; };
+		701C352623D963130079E481 /* directionalsleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 701C352523D963130079E481 /* directionalsleft.png */; };
+		701C352823D9631C0079E481 /* directionalsright.png in Resources */ = {isa = PBXBuildFile; fileRef = 701C352723D9631C0079E481 /* directionalsright.png */; };
+		7040FFCD23D8B1E600DB07FB /* golfCounter.c in Sources */ = {isa = PBXBuildFile; fileRef = 7040FFCC23D8B1E600DB07FB /* golfCounter.c */; };
 		70485BC623A87D5800B03B91 /* Piglatin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70485BC523A87D5800B03B91 /* Piglatin.storyboard */; };
 		704C29A223A7E8F500E0AC9A /* noVowels.c in Sources */ = {isa = PBXBuildFile; fileRef = 704C29A123A7E8F500E0AC9A /* noVowels.c */; };
 		70B50FD223D2185500930A8D /* topTree.png in Resources */ = {isa = PBXBuildFile; fileRef = 70B50FD123D2185500930A8D /* topTree.png */; };
@@ -38,7 +42,6 @@
 		70ED10B62396D71D00B37A07 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 70ED10B52396D71D00B37A07 /* reverse.c */; };
 		70F1705423CF72D400BCEBBA /* Golf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F1705323CF72D400BCEBBA /* Golf.storyboard */; };
 		70F1705623CF72F200BCEBBA /* GolfController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F1705523CF72F200BCEBBA /* GolfController.m */; };
-		70F1705923CF73E300BCEBBA /* golfball.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F1705823CF73E300BCEBBA /* golfball.png */; };
 		70F8278D23A944EF00086EF6 /* PiglatinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8278C23A944EF00086EF6 /* PiglatinController.m */; };
 /* End PBXBuildFile section */
 
@@ -68,12 +71,16 @@
 		6D7036DE2379DA59004A956C /* jumpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jumpers.c; sourceTree = "<group>"; };
 		6D7036E02379DA94004A956C /* histogram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = histogram.c; sourceTree = "<group>"; };
 		6D7036E22379DAE0004A956C /* control.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = control.h; sourceTree = "<group>"; };
+		6D8C4EB723D74B9E002B2B3D /* golfball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfball.png; sourceTree = "<group>"; };
 		6DB666062371E7D600A89134 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		6DB666082371ED4400A89134 /* FileIO.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileIO.storyboard; sourceTree = "<group>"; };
 		6DB666102372014200A89134 /* Histogram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Histogram.storyboard; sourceTree = "<group>"; };
 		6DB666122372021400A89134 /* AlgoSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlgoSearch.storyboard; sourceTree = "<group>"; };
 		6DB666142372033B00A89134 /* Pythagoras.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pythagoras.storyboard; sourceTree = "<group>"; };
 		6DB6661E23724E2100A89134 /* calc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calc.c; sourceTree = "<group>"; };
+		701C352523D963130079E481 /* directionalsleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directionalsleft.png; sourceTree = "<group>"; };
+		701C352723D9631C0079E481 /* directionalsright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directionalsright.png; sourceTree = "<group>"; };
+		7040FFCC23D8B1E600DB07FB /* golfCounter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = golfCounter.c; sourceTree = "<group>"; };
 		70485BC523A87D5800B03B91 /* Piglatin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Piglatin.storyboard; sourceTree = "<group>"; };
 		704C299F23A7E61400E0AC9A /* PiglatinController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PiglatinController.h; sourceTree = "<group>"; };
 		704C29A123A7E8F500E0AC9A /* noVowels.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = noVowels.c; sourceTree = "<group>"; };
@@ -87,7 +94,6 @@
 		70F1705323CF72D400BCEBBA /* Golf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Golf.storyboard; sourceTree = "<group>"; };
 		70F1705523CF72F200BCEBBA /* GolfController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfController.m; sourceTree = "<group>"; };
 		70F1705723CF72FD00BCEBBA /* GolfController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolfController.h; sourceTree = "<group>"; };
-		70F1705823CF73E300BCEBBA /* golfball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfball.png; sourceTree = "<group>"; };
 		70F8278C23A944EF00086EF6 /* PiglatinController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PiglatinController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +201,7 @@
 				70ED10B52396D71D00B37A07 /* reverse.c */,
 				704C29A123A7E8F500E0AC9A /* noVowels.c */,
 				70CC4E2923C78A4300B85592 /* pointers.c */,
+				7040FFCC23D8B1E600DB07FB /* golfCounter.c */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -202,10 +209,12 @@
 		70B50FD323D21EA400930A8D /* Golf */ = {
 			isa = PBXGroup;
 			children = (
+				701C352723D9631C0079E481 /* directionalsright.png */,
+				701C352523D963130079E481 /* directionalsleft.png */,
 				70B50FD123D2185500930A8D /* topTree.png */,
-				70F1705823CF73E300BCEBBA /* golfball.png */,
 				70F1705323CF72D400BCEBBA /* Golf.storyboard */,
 				70B50FD423D21EBC00930A8D /* golf2.storyboard */,
+				6D8C4EB723D74B9E002B2B3D /* golfball.png */,
 			);
 			path = Golf;
 			sourceTree = "<group>";
@@ -274,12 +283,21 @@
 				70B836352398185400D77BBF /* Reverse.storyboard in Resources */,
 				70B50FD223D2185500930A8D /* topTree.png in Resources */,
 				6DB666112372014200A89134 /* Histogram.storyboard in Resources */,
+				701C352823D9631C0079E481 /* directionalsright.png in Resources */,
 				6D5429C023708A0C0059C604 /* Assets.xcassets in Resources */,
 				6DB666072371E7D600A89134 /* Calculator.storyboard in Resources */,
 				6DB666132372021400A89134 /* AlgoSearch.storyboard in Resources */,
+<<<<<<< HEAD
+<<<<<<< HEAD
+				701C352623D963130079E481 /* directionalsleft.png in Resources */,
+=======
+				6D8C4EB823D74B9E002B2B3D /* golfball.png in Resources */,
+>>>>>>> 7244f71644bcf95c354aeed28e10b01925ab6a39
+=======
+				6D8C4EB823D74B9E002B2B3D /* golfball.png in Resources */,
+>>>>>>> 7244f71644bcf95c354aeed28e10b01925ab6a39
 				6DB666152372033B00A89134 /* Pythagoras.storyboard in Resources */,
 				70485BC623A87D5800B03B91 /* Piglatin.storyboard in Resources */,
-				70F1705923CF73E300BCEBBA /* golfball.png in Resources */,
 				6D5429BE23708A0A0059C604 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +311,7 @@
 			files = (
 				6D7036DF2379DA59004A956C /* jumpers.c in Sources */,
 				6D7036D123788FAB004A956C /* FileIOController.m in Sources */,
+				7040FFCD23D8B1E600DB07FB /* golfCounter.c in Sources */,
 				70F1705623CF72F200BCEBBA /* GolfController.m in Sources */,
 				6DB6661F23724E2100A89134 /* calc.c in Sources */,
 				70F8278D23A944EF00086EF6 /* PiglatinController.m in Sources */,

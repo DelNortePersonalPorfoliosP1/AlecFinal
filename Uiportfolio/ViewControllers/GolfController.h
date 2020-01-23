@@ -17,8 +17,11 @@
 @property (strong, nonatomic) IBOutlet UIImageView *Ball;
 @property (strong, nonatomic) IBOutlet UIImageView *Hole;
 @property (strong, nonatomic) IBOutlet UIImageView *Bunker;
+@property (strong, nonatomic) IBOutlet UIImageView *directionalsright;
+@property (strong, nonatomic) IBOutlet UIImageView *directionalsleft;
 @property (strong, nonatomic) IBOutlet UIButton *resetButton;
 @property (strong, nonatomic) IBOutlet UIButton *nextLevel;
+@property (strong, nonatomic) IBOutlet UILabel *Shots;
 @property (weak, nonatomic) IBOutlet UIImageView *Tree;
 
 
