@@ -287,15 +287,8 @@
 				6D5429C023708A0C0059C604 /* Assets.xcassets in Resources */,
 				6DB666072371E7D600A89134 /* Calculator.storyboard in Resources */,
 				6DB666132372021400A89134 /* AlgoSearch.storyboard in Resources */,
-<<<<<<< HEAD
-<<<<<<< HEAD
 				701C352623D963130079E481 /* directionalsleft.png in Resources */,
-=======
 				6D8C4EB823D74B9E002B2B3D /* golfball.png in Resources */,
->>>>>>> 7244f71644bcf95c354aeed28e10b01925ab6a39
-=======
-				6D8C4EB823D74B9E002B2B3D /* golfball.png in Resources */,
->>>>>>> 7244f71644bcf95c354aeed28e10b01925ab6a39
 				6DB666152372033B00A89134 /* Pythagoras.storyboard in Resources */,
 				70485BC623A87D5800B03B91 /* Piglatin.storyboard in Resources */,
 				6D5429BE23708A0A0059C604 /* Main.storyboard in Resources */,
