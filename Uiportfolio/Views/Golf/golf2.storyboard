@@ -50,6 +50,20 @@
                                     <action selector="resetBallPosition:" destination="FPz-iR-Sz6" eventType="touchUpInside" id="Fgt-7g-q05"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3S-IW-dhU">
+                                <rect key="frame" x="20" y="156" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roE-QH-vYo" userLabel="Par">
+                                <rect key="frame" x="20" y="219" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5QZ-LZ-QpT"/>
@@ -57,10 +71,12 @@
                     <connections>
                         <outlet property="Ball" destination="VyC-bB-x2j" id="Pkj-yG-diF"/>
                         <outlet property="Hole" destination="0kO-cn-vq5" id="9cu-f0-v7Q"/>
+                        <outlet property="Par" destination="roE-QH-vYo" id="Po1-Fo-dx7"/>
                         <outlet property="Shots" destination="hZ2-Oe-UOT" id="bVD-3Q-sne"/>
                         <outlet property="directionalsleft" destination="top-En-Grg" id="67v-RJ-gIo"/>
                         <outlet property="directionalsright" destination="hWn-jB-ImR" id="ZnL-Xd-6Jn"/>
                         <outlet property="resetButton" destination="JEQ-uj-xRK" id="fuG-Ij-vRp"/>
+                        <outlet property="score" destination="R3S-IW-dhU" id="fY5-TV-RRy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUE-I0-P7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

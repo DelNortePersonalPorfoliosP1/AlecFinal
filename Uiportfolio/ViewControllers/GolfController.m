@@ -9,12 +9,16 @@
 #include "control.h"
 #import "GolfController.h"
 
-int golfCounter = 0;
-
+int score = 0;
 @implementation GolfController
-@synthesize Ball, Hole, firstPoint, lastPoint, resetButton, ballInBunker, initialBallPosition, Shots;
+@synthesize Ball, Hole, firstPoint, lastPoint, resetButton, ballInBunker, initialBallPosition, Shots, Par, golfCounter, parForCurrentHole;
+
+
 - (void)viewDidLoad {
   [super viewDidLoad];
+    if (self.parForCurrentHole == 0) {
+        self.parForCurrentHole = 3;
+    }
   // changes hole image to be circular
   self.Hole.layer.cornerRadius = .5*self.Hole.layer.frame.size.height;
   self.Hole.layer.masksToBounds = YES;
@@ -22,8 +26,18 @@ int golfCounter = 0;
     self.ballInHole = false;
     self.initialBallPosition = self.Ball.frame;
     self.nextLevel.alpha = 0;
+    self.golfCounter = 0;
     self.Shots.text = [NSString stringWithFormat:@"Shots: %d", golfCounter];
+    self.score.text = [NSString stringWithFormat:@"Score: %d", score];
+    self.Par.text = [NSString stringWithFormat:@"Par: %d", self.parForCurrentHole];
 
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"golf2"]) {
+        GolfController *golfController = [segue destinationViewController];
+        golfController.parForCurrentHole = 2;
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -93,6 +107,8 @@ int golfCounter = 0;
       self.ballInBunker = false;
       self.ballInHole = true;
       self.nextLevel.alpha = 1;
+      score += self.golfCounter - self.parForCurrentHole;
+      self.score.text = [NSString stringWithFormat:@"Score: %d", score];
 
   }
     
@@ -150,13 +166,13 @@ int golfCounter = 0;
      self.Ball.frame = self.initialBallPosition;
     self.ballInHole = false;
     self.Ball.alpha = 1;
-    golfCounter = 0;
-    self.Shots.text = [NSString stringWithFormat:@"Shots: %d", golfCounter];
-    self.nextLevel.alpha = 0;
 
+    self.nextLevel.alpha = 0;
+    self.score.text = [NSString stringWithFormat:@"score: %d", score];
 
 
 }
+
 
 
 

@@ -22,6 +22,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *resetButton;
 @property (strong, nonatomic) IBOutlet UIButton *nextLevel;
 @property (strong, nonatomic) IBOutlet UILabel *Shots;
+@property (strong, nonatomic) IBOutlet UILabel *Par;
+@property (strong, nonatomic) IBOutlet UILabel *score;
 @property (weak, nonatomic) IBOutlet UIImageView *Tree;
 
 
@@ -33,4 +35,8 @@
 @property (nonatomic) float ballVelocityX;
 @property (nonatomic) float ballVelocityY;
 @property (strong, nonatomic) NSTimer *gameTimer;
+
+@property (nonatomic) int golfCounter;
+@property (nonatomic) int parForCurrentHole;
+
 @end
