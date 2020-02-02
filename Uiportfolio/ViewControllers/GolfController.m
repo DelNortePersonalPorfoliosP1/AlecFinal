@@ -27,7 +27,6 @@ int score = 0;
     self.initialBallPosition = self.Ball.frame;
     self.nextLevel.alpha = 0;
     self.golfCounter = 0;
-    self.Shots.text = [NSString stringWithFormat:@"Shots: %d", golfCounter];
     self.score.text = [NSString stringWithFormat:@"Score: %d", score];
     self.Par.text = [NSString stringWithFormat:@"Par: %d", self.parForCurrentHole];
 
@@ -35,9 +34,13 @@ int score = 0;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"golf2"]) {
-        GolfController *golfController = [segue destinationViewController];
-        golfController.parForCurrentHole = 2;
-    }
+           GolfController *golfController = [segue destinationViewController];
+           golfController.parForCurrentHole = 2;
+       }
+    if ([[segue identifier] isEqualToString:@"golf3"]) {
+              GolfController *golfController = [segue destinationViewController];
+              golfController.parForCurrentHole = 4;
+          }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -146,6 +149,11 @@ int score = 0;
         
         self.ballVelocityX = 1.4 * self.ballVelocityX;
     }
+    if (CGRectIntersectsRect(self.Ball.frame, self.pond.frame)) {
+        self.Ball.frame = self.initialBallPosition;
+        [self.gameTimer invalidate];
+        [self.view setUserInteractionEnabled:YES];
+    }
     
     if (CGRectIntersectsRect(self.Ball.frame, self.directionalsright.frame)) {
         // See if it is moving right
@@ -160,7 +168,14 @@ int score = 0;
         self.ballVelocityX = 1.4 * self.ballVelocityX;
     }
 
+    if (CGRectIntersectsRect(self.Ball.frame, self.bluePortal.frame)) {
+        self.Ball.center = self.orangePortal.center;
+    }
     
+   /* if (CGRectIntersectsRect(self.Ball.frame, self.orangePortal.frame)) {
+        self.Ball.center = self.bluePortal.center;
+    }
+    */
 }
 - (IBAction)resetBallPosition:(id)sender {
      self.Ball.frame = self.initialBallPosition;

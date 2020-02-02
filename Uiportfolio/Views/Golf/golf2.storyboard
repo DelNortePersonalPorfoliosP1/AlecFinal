@@ -64,6 +64,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wm-Tx-vPC">
+                                <rect key="frame" x="318" y="810" width="76" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <segue destination="6xs-Mg-6Kd" kind="show" id="Z4g-BK-DVJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5QZ-LZ-QpT"/>
@@ -75,6 +84,7 @@
                         <outlet property="Shots" destination="hZ2-Oe-UOT" id="bVD-3Q-sne"/>
                         <outlet property="directionalsleft" destination="top-En-Grg" id="67v-RJ-gIo"/>
                         <outlet property="directionalsright" destination="hWn-jB-ImR" id="ZnL-Xd-6Jn"/>
+                        <outlet property="nextLevel" destination="3wm-Tx-vPC" id="FZt-Ii-dtG"/>
                         <outlet property="resetButton" destination="JEQ-uj-xRK" id="fuG-Ij-vRp"/>
                         <outlet property="score" destination="R3S-IW-dhU" id="fY5-TV-RRy"/>
                     </connections>
@@ -82,6 +92,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUE-I0-P7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="186.95652173913044" y="-97.098214285714278"/>
+        </scene>
+        <!--golf3-->
+        <scene sceneID="ElR-1A-DXv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="golf3" id="6xs-Mg-6Kd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6g9-p4-OdA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vq-Sp-V7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="173"/>
         </scene>
     </scenes>
     <resources>

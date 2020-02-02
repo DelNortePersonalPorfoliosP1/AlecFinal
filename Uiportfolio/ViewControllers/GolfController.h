@@ -16,6 +16,9 @@
 @interface GolfController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *Ball;
 @property (strong, nonatomic) IBOutlet UIImageView *Hole;
+@property (strong, nonatomic) IBOutlet UIImageView *pond;
+@property (strong, nonatomic) IBOutlet UIImageView *bluePortal;
+@property (strong, nonatomic) IBOutlet UIImageView *orangePortal;
 @property (strong, nonatomic) IBOutlet UIImageView *Bunker;
 @property (strong, nonatomic) IBOutlet UIImageView *directionalsright;
 @property (strong, nonatomic) IBOutlet UIImageView *directionalsleft;
