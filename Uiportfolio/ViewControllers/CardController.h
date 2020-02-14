@@ -9,5 +9,8 @@
 
 @interface CardController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *randomNumber;
+
+@property (strong, nonatomic) IBOutlet UIImageView *testImage;
 
 @end

@@ -102,6 +102,7 @@
 		70524CBF23EB2E3C007CD570 /* JS.png in Resources */ = {isa = PBXBuildFile; fileRef = 70524C7F23EB2E3C007CD570 /* JS.png */; };
 		70524CC023EB2E3C007CD570 /* QS.png in Resources */ = {isa = PBXBuildFile; fileRef = 70524C8023EB2E3C007CD570 /* QS.png */; };
 		70524CC223EB2F31007CD570 /* warCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70524CC123EB2F31007CD570 /* warCards.storyboard */; };
+		70B0652323F3185D009D8A3F /* cardGame.c in Sources */ = {isa = PBXBuildFile; fileRef = 70B0652223F3185D009D8A3F /* cardGame.c */; };
 		70B37D0323D974B500DBC7D3 /* directionalsleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 70B37D0223D974B500DBC7D3 /* directionalsleft.png */; };
 		70B50FD223D2185500930A8D /* topTree.png in Resources */ = {isa = PBXBuildFile; fileRef = 70B50FD123D2185500930A8D /* topTree.png */; };
 		70B50FD523D21EBD00930A8D /* golf2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B50FD423D21EBC00930A8D /* golf2.storyboard */; };
@@ -222,6 +223,7 @@
 		70524C7F23EB2E3C007CD570 /* JS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JS.png; sourceTree = "<group>"; };
 		70524C8023EB2E3C007CD570 /* QS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QS.png; sourceTree = "<group>"; };
 		70524CC123EB2F31007CD570 /* warCards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = warCards.storyboard; sourceTree = "<group>"; };
+		70B0652223F3185D009D8A3F /* cardGame.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cardGame.c; sourceTree = "<group>"; };
 		70B37D0223D974B500DBC7D3 /* directionalsleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directionalsleft.png; sourceTree = "<group>"; };
 		70B50FD123D2185500930A8D /* topTree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topTree.png; sourceTree = "<group>"; };
 		70B50FD423D21EBC00930A8D /* golf2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = golf2.storyboard; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				6D7036D623799B80004A956C /* AlgoController.m */,
+				70B836332398127400D77BBF /* ReverseController.h */,
 				6D7036D823799BBF004A956C /* AlgoController.h */,
 				6D5429BA23708A0A0059C604 /* CalcController.m */,
 				6D5429B923708A0A0059C604 /* CalcController.h */,
@@ -311,7 +314,6 @@
 				6D7036C82377B995004A956C /* PythController.m */,
 				6D7036CA2377B9CA004A956C /* PythController.h */,
 				70B836362398187700D77BBF /* ReverseController.m */,
-				70B836332398127400D77BBF /* ReverseController.h */,
 				70F8278C23A944EF00086EF6 /* PiglatinController.m */,
 				704C299F23A7E61400E0AC9A /* PiglatinController.h */,
 				70F1705523CF72F200BCEBBA /* GolfController.m */,
@@ -346,6 +348,7 @@
 				704C29A123A7E8F500E0AC9A /* noVowels.c */,
 				70CC4E2923C78A4300B85592 /* pointers.c */,
 				7040FFCC23D8B1E600DB07FB /* golfCounter.c */,
+				70B0652223F3185D009D8A3F /* cardGame.c */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				6D7036DF2379DA59004A956C /* jumpers.c in Sources */,
 				6D7036D123788FAB004A956C /* FileIOController.m in Sources */,
 				7040FFCD23D8B1E600DB07FB /* golfCounter.c in Sources */,
+				70B0652323F3185D009D8A3F /* cardGame.c in Sources */,
 				70F1705623CF72F200BCEBBA /* GolfController.m in Sources */,
 				6DB6661F23724E2100A89134 /* calc.c in Sources */,
 				70F8278D23A944EF00086EF6 /* PiglatinController.m in Sources */,
