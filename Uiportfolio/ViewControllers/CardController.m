@@ -21,7 +21,7 @@ int numPlayerOneCards;
 int numPlayerTwoCards;
 int numPlayerOneDiscard;
 int numPlayerTwoDiscard;
-int test:
+int test;
 
 
 - (void)viewDidLoad {
