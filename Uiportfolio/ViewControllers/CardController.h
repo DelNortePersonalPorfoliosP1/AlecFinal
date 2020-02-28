@@ -14,6 +14,9 @@
 @property (strong, nonatomic) IBOutlet UIImageView *testImage;
 @property (strong, nonatomic) IBOutlet UIImageView *testComputerImage;
 
+@property (strong, nonatomic) IBOutlet UIImageView *computerDiscard;
+@property (strong, nonatomic) IBOutlet UIImageView *playerDiscard;
+
 @property (weak, nonatomic) IBOutlet UILabel *cardStatus;
 @property (weak, nonatomic) IBOutlet UILabel *playerDeckCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *computerDeckCountLabel;

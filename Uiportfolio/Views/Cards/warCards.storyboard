@@ -75,8 +75,10 @@
                     <connections>
                         <outlet property="cardStatus" destination="TCK-xY-Uvs" id="Vp6-AH-CtW"/>
                         <outlet property="computerDeckCountLabel" destination="khC-ah-kUb" id="4Uh-G6-pM8"/>
+                        <outlet property="computerDiscard" destination="gRm-UR-88f" id="l7F-Rz-Qac"/>
                         <outlet property="nextButton" destination="eJA-BN-Tqe" id="eas-Za-aUq"/>
                         <outlet property="playerDeckCountLabel" destination="1pl-bS-KXf" id="62B-7B-A1L"/>
+                        <outlet property="playerDiscard" destination="ttQ-g3-rCy" id="FBh-Ma-yii"/>
                         <outlet property="testComputerImage" destination="PJH-cM-aqB" id="BeU-u9-usB"/>
                         <outlet property="testImage" destination="aUa-lS-kVD" id="EvD-Fl-abt"/>
                     </connections>
