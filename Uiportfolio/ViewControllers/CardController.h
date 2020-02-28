@@ -12,5 +12,11 @@
 @property (strong, nonatomic) IBOutlet UILabel *randomNumber;
 
 @property (strong, nonatomic) IBOutlet UIImageView *testImage;
+@property (strong, nonatomic) IBOutlet UIImageView *testComputerImage;
+
+@property (weak, nonatomic) IBOutlet UILabel *cardStatus;
+@property (weak, nonatomic) IBOutlet UILabel *playerDeckCountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *computerDeckCountLabel;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
 @end

@@ -14,14 +14,13 @@
 @synthesize randomNumber;
 int mainDeck[52];
 int playerOneDeck[52];
-int playerTwoDeck[52];
+int computerDeck[52];
 int playerOneDiscard[52];
-int playerTwoDiscard[52];
+int computerDiscard[52];
 int numPlayerOneCards;
-int numPlayerTwoCards;
+int numComputerCards;
 int numPlayerOneDiscard;
-int numPlayerTwoDiscard;
-int test;
+int numComputerDiscard;
 
 
 - (void)viewDidLoad {
@@ -33,28 +32,27 @@ int test;
     for (int i = 0; i < 52; i++) {
         mainDeck[i] = i;
         playerOneDeck[i] = -1;
-        playerTwoDeck[i] = -1;
+        computerDeck[i] = -1;
         playerOneDiscard[i] = -1;
-        playerTwoDiscard[i] = -1;
+        computerDiscard[i] = -1;
     }
     shuffleCards(mainDeck, 52);
     for (int i = 0; i < 26; i++) {
         playerOneDeck[i] = mainDeck[i];
-        playerTwoDeck[i] = mainDeck[i + 26];
+        computerDeck[i] = mainDeck[i + 26];
     }
     
     numPlayerOneCards = 26;
-    numPlayerTwoCards = 26;
+    numComputerCards = 26;
     
     numPlayerOneDiscard = 0;
-    numPlayerTwoDiscard = 0;
+    numComputerDiscard = 0;
     
-    int topPlayerCard = getTopCardFromDeck(playerOneDeck, &numPlayerOneCards);
-    self.testImage.image = [self imageForCard: topPlayerCard];
-    
+    self.playerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numPlayerOneCards];
+    self.computerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numComputerCards];
 }
-/*
 
+/*
 - (void)viewDidLoad {
     time_t t;
 
@@ -103,6 +101,10 @@ int test;
     self.testImage.image = [UIImage imageNamed: [NSString stringWithFormat:@"%s", img]];
 }
 */
+void addDiscard(int cards[], int card, int* pNumCards) {
+    cards[*pNumCards] = card;
+    *pNumCards = *pNumCards + 1;
+}
 
 - (UIImage *)imageForCard:(int)card {
     NSString * suit;
@@ -142,7 +144,17 @@ void shuffleCards(int cards[], int numCards) {
         cards[newSlot] = temp;
     }
 }
+int getTopComputerCardFromDeck(int cards[], int * pNumCards) {
+    int topCard2 = cards[0];
+    for (int i = 0; i < 51; i++) {
 
+        cards[i] = cards[i + 1];
+    }
+    cards[51] = -1;
+    
+    *pNumCards = *pNumCards - 1;
+    return topCard2;
+}
 int getTopCardFromDeck(int cards[], int * pNumCards) {
     int topCard = cards[0];
     for (int i = 0; i < 51; i++) {
@@ -155,7 +167,73 @@ int getTopCardFromDeck(int cards[], int * pNumCards) {
     return topCard;
 }
 
-- (IBAction)showNumber:(id)sender {
+- (IBAction)dealNextCard:(id)sender {
+    int topPlayerCard = getTopCardFromDeck(playerOneDeck, &numPlayerOneCards);
+    self.testImage.image = [self imageForCard: topPlayerCard];
+    int topComputerCard = getTopComputerCardFromDeck(computerDeck, &numComputerCards);
+    self.testComputerImage.image = [self imageForCard: topComputerCard];
+
+    int playerCardValue = topPlayerCard % 13 + 2;
+    int computerCardValue = topComputerCard % 13 + 2;
+    bool playerWins = playerCardValue >= computerCardValue;
+
+    self.cardStatus.text = playerWins ? @"Winner >" : @"< Winner";
+
+    if (playerWins) {
+        self.cardStatus.text = @"Winner >";
+        addDiscard(playerOneDiscard, topPlayerCard, &numPlayerOneDiscard);
+        addDiscard(playerOneDiscard, topComputerCard, &numPlayerOneDiscard);
+    } else {
+        self.cardStatus.text = @"< Winner";
+        addDiscard(computerDiscard, topPlayerCard, &numComputerDiscard);
+        addDiscard(computerDiscard, topComputerCard, &numComputerDiscard);
+
+    }
+    self.playerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numPlayerOneCards];
+    self.computerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numComputerCards];
+
+    if (numPlayerOneCards == 0) {
+        if (numPlayerOneDiscard == 0) {
+            self.nextButton.hidden = true;
+            self.cardStatus.text = @"Computer Is The Winner!";
+            self.testImage.hidden = true;
+            self.testComputerImage.hidden = true;
+            return;
+        }
+        for (int i = 0; i < 52; i++) {
+            playerOneDeck[i] = playerOneDiscard[i];
+            playerOneDiscard[i] = -1;
+        }
+        
+        numPlayerOneCards = numPlayerOneDiscard;
+        numPlayerOneDiscard = 0;
+        
+        shuffleCards(playerOneDeck, numPlayerOneCards);
+        self.playerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numPlayerOneCards];
+        
+
+    }
+    if (numComputerCards == 0) {
+        if (numComputerDiscard == 0) {
+            self.nextButton.hidden = true;
+            self.cardStatus.text = @"Player Is The Winner!";
+            self.testImage.hidden = true;
+            self.testComputerImage.hidden = true;
+            return;
+        }
+        for (int i = 0; i < 52; i++) {
+            computerDeck[i] = computerDiscard[i];
+            computerDiscard[i] = -1;
+        }
+        
+        numComputerCards = numComputerDiscard;
+        numComputerDiscard = 0;
+        
+        shuffleCards(computerDeck, numComputerCards);
+        self.computerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numComputerCards];
+
+    }
+    /*
     time_t t;
 
     srand((unsigned) time(&t));
@@ -167,7 +245,6 @@ int getTopCardFromDeck(int cards[], int * pNumCards) {
         mainDeck[i] = mainDeck[newSlot];
         mainDeck[newSlot] = temp;
     }
-    
         int card = rand() % 13 + 2;
         int suit = rand() % 4;
         char c[3];
@@ -196,9 +273,10 @@ int getTopCardFromDeck(int cards[], int * pNumCards) {
 
         char img[10];
         sprintf(img, "%s%s.png", c, s);
-        
+     
         self.testImage.image = [UIImage imageNamed: [NSString stringWithFormat:@"%s", img]];
-    
+    self.testComputerImage.image = [UIImage imageNamed: [NSString stringWithFormat:@"%s", img]];
+    */
 }
 
 
