@@ -10,6 +10,8 @@
 #import "CardController.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+//Declaring Variables for the project
 @implementation CardController
 @synthesize randomNumber;
 int mainDeck[52];
@@ -22,13 +24,13 @@ int numComputerCards;
 int numPlayerOneDiscard;
 int numComputerDiscard;
 
-
+//Code for when the storyboard loads
 - (void)viewDidLoad {
     time_t t;
 
     srand((unsigned) time(&t));
 
-    
+    //This shuffles the deck
     for (int i = 0; i < 52; i++) {
         mainDeck[i] = i;
         playerOneDeck[i] = -1;
@@ -36,18 +38,22 @@ int numComputerDiscard;
         playerOneDiscard[i] = -1;
         computerDiscard[i] = -1;
     }
+    //This assigns the shuffled 52 cards into 2 seperate piles, the player deck and the computer deck
     shuffleCards(mainDeck, 52);
     for (int i = 0; i < 26; i++) {
         playerOneDeck[i] = mainDeck[i];
         computerDeck[i] = mainDeck[i + 26];
     }
     
+    //This sets the number of cards in each deck when the game starts. Used later to track number of cards left.
     numPlayerOneCards = 26;
     numComputerCards = 26;
     
+    //This sets the number of cards in each discard when the game starts. Used later to track number of cards left.
     numPlayerOneDiscard = 0;
     numComputerDiscard = 0;
     
+    //Sets labels to the number of cards in the player and computer
     self.playerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numPlayerOneCards];
     self.computerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numComputerCards];
 }
@@ -101,15 +107,19 @@ int numComputerDiscard;
     self.testImage.image = [UIImage imageNamed: [NSString stringWithFormat:@"%s", img]];
 }
 */
+
+//Adds count to discard
 void addDiscard(int cards[], int card, int* pNumCards) {
     cards[*pNumCards] = card;
     *pNumCards = *pNumCards + 1;
 }
 
+//Code for card images
 - (UIImage *)imageForCard:(int)card {
     NSString * suit;
     char value[3];
     
+    //Setting the suit and card number so that I can set the images later
     if (card <= 12) {
         suit = @"H";
     } else if (card <= 25) {
@@ -136,6 +146,7 @@ void addDiscard(int cards[], int card, int* pNumCards) {
     return [UIImage imageNamed: [NSString stringWithFormat:@"%s%@.png", value, suit]];
 }
 
+//shuffle card code
 void shuffleCards(int cards[], int numCards) {
     for (int i = 0; i < numCards; i++) {
         int temp = cards[i];
@@ -144,6 +155,8 @@ void shuffleCards(int cards[], int numCards) {
         cards[newSlot] = temp;
     }
 }
+
+//gets the top card from the computer deck
 int getTopComputerCardFromDeck(int cards[], int * pNumCards) {
     int topCard2 = cards[0];
     for (int i = 0; i < 51; i++) {
@@ -155,6 +168,8 @@ int getTopComputerCardFromDeck(int cards[], int * pNumCards) {
     *pNumCards = *pNumCards - 1;
     return topCard2;
 }
+
+//gets the top card from the player deck
 int getTopCardFromDeck(int cards[], int * pNumCards) {
     int topCard = cards[0];
     for (int i = 0; i < 51; i++) {
@@ -167,6 +182,7 @@ int getTopCardFromDeck(int cards[], int * pNumCards) {
     return topCard;
 }
 
+//This is all the code for the "next" button
 - (IBAction)dealNextCard:(id)sender {
     int topPlayerCard = getTopCardFromDeck(playerOneDeck, &numPlayerOneCards);
     self.testImage.image = [self imageForCard: topPlayerCard];
@@ -179,6 +195,7 @@ int getTopCardFromDeck(int cards[], int * pNumCards) {
 
     self.cardStatus.text = playerWins ? @"Winner >" : @"< Winner";
 
+    //Displaying messages based off who wins
     if (playerWins) {
         self.cardStatus.text = @"Winner >";
         addDiscard(playerOneDiscard, topPlayerCard, &numPlayerOneDiscard);
@@ -189,9 +206,12 @@ int getTopCardFromDeck(int cards[], int * pNumCards) {
         addDiscard(computerDiscard, topComputerCard, &numComputerDiscard);
 
     }
+    
+    //Sets deck counts to the number of cards left
     self.playerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numPlayerOneCards];
     self.computerDeckCountLabel.text = [NSString stringWithFormat:@"Cards Left: %d", numComputerCards];
 
+    //Says that the computer is the winner if player has no cards
     if (numPlayerOneCards == 0) {
         if (numPlayerOneDiscard == 0) {
             self.nextButton.hidden = true;
@@ -213,6 +233,8 @@ int getTopCardFromDeck(int cards[], int * pNumCards) {
         
 
     }
+    
+    //Says that the player is the winner if computer has no cards
     if (numComputerCards == 0) {
         if (numComputerDiscard == 0) {
             self.nextButton.hidden = true;
